@@ -62,7 +62,7 @@ enum {
     HASH_DATA_AREA = 136
 };
 
-void cn_slow_hash(const void *data, size_t length, char *hash, int variant, int prehashed, uint64_t height);
+void cn_monero_slow_hash(const void *data, size_t length, char *hash, int variant, int prehashed, uint64_t height);
 
 inline void slow_hash(const void *data, const size_t length, char *hash) {
     cn_monero_slow_hash(data, length, hash, 0 /*variant*/, 0 /*prehashed*/, 0 /*height*/);
