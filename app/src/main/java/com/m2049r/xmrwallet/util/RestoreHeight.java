@@ -96,7 +96,7 @@ public class RestoreHeight {
             // if too recent, go back in time and find latest one we have
             while (prevBc == null) {
                 cal.add(Calendar.MONTH, -1);
-                if (cal.get(Calendar.YEAR) < 2014) {
+                if (cal.get(Calendar.YEAR) < 2017) {
                     throw new IllegalStateException("endless loop looking for blockheight");
                 }
                 prevTime = cal.getTimeInMillis();
